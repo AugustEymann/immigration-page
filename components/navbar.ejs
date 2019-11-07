@@ -1,0 +1,52 @@
+<nav class="navbar has-shadow" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <p class="navbar-item"><strong>Immigration </strong>💯</p>
+    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+      data-target="navbarBasicExample">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-start">
+        <% if (page === 'home') { %>
+          <a class="navbar-item is-tab is-active" href="index.html">
+              Home
+            </a>
+        <% } else { %>
+          <a class="navbar-item is-tab" href="index.html">
+              Home
+            </a>
+        <% } %>
+
+        <% if (page === 'issue') { %>
+          <a class="navbar-item is-tab is-active" href="issue.html">
+              The Issue
+            </a>
+        <% } else { %>
+          <a class="navbar-item is-tab" href="issue.html">
+              The Issue
+            </a>
+        <% } %>
+
+        <% if (page === 'eco') { %>
+          <a class="navbar-item is-tab is-active" href="economy.html">
+              The Economy
+            </a>
+        <% } else { %>
+          <a class="navbar-item is-tab" href="economy.html">
+              The Economy
+            </a>
+        <% } %>
+    </div>
+
+  </div>
+
+  </div>
+  </div>
+  </div>
+  </div>
+</nav>
+

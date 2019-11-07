@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="scripts/ejs.js"></script>
+  <script src="scripts/ejs-render-remote.js"></script>
+
+</head>
+
+<body>
+  <div class="app">
+     
+
+  </div>
+
+  
+  <script>
+    // Loads Header and Navbar
+    $('head').prepend(ejs.rr('components/head.ejs'))
+    $('.app').prepend(ejs.rr('components/navbar.ejs', {page: 'home'}))
+    
+    //Load Page Header
+    $('.app').append(ejs.rr('components/header.ejs', {title: 'Immigrants', subtitle: 'Why they effect us in all positive ways.'}))
+    //Loads Page Data
+    $('.app').append(ejs.rr('components/home.ejs'))
+    //Load Footer Last
+    $('.app').append(ejs.rr('components/footer.ejs'));
+  </script>
+    
+</body>
+
+</html>
