@@ -15,7 +15,7 @@
     </div>
     <script>
         // Loads Header
-        $('head').prepend(ejs.rr('components/head.ejs'))
+        $('.app').prepend(ejs.rr('components/head.ejs', {page: 'Issue'}))
         $('.app').prepend(ejs.rr('components/navbar.ejs', {page: 'issue'}))
 
         //Load Page Header

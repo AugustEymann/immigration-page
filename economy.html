@@ -19,7 +19,7 @@
   
   <script>
     // Loads Header and Navbar
-    $('head').prepend(ejs.rr('components/head.ejs'))
+    $('.app').prepend(ejs.rr('components/head.ejs', {page: 'Economy'}))
     $('.app').prepend(ejs.rr('components/navbar.ejs', {page: 'eco'}))
     
     //Load Page Header
