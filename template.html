@@ -12,24 +12,31 @@
 
 <body>
   <div class="app">
-     
+
 
   </div>
 
-  
+
   <script>
     // Loads Header and Navbar
-      $('.app').prepend(ejs.rr('components/head.ejs', {page: 'Template'}))
-    $('.app').prepend(ejs.rr('components/navbar.ejs', {page: 'eco'}))
-    
+    $('.app').prepend(ejs.rr('components/head.ejs', {
+      page: 'Template'
+    }))
+    $('.app').prepend(ejs.rr('components/navbar.ejs', {
+      page: 'eco'
+    }))
+
     //Load Page Header
-    $('.app').append(ejs.rr('components/header.ejs', {title: 'The Template', subtitle: 'This is a template.'}))
+    $('.app').append(ejs.rr('components/header.ejs', {
+      title: 'The Template',
+      subtitle: 'This is a template.'
+    }))
     //Loads Page Data
     //$('.app').append(ejs.rr('pages/eco.ejs'))
     //Load Footer Last
     $('.app').append(ejs.rr('components/footer.ejs'));
   </script>
-    
+
 </body>
 
 </html>
