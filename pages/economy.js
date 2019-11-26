@@ -7,4 +7,4 @@
     //Loads Page Data
     $('.app').append(ejs.rr('views/economy.ejs'))
     //Load Footer Last
-    $('.app').append(ejs.rr('components/footer.ejs'));
+    $('.app').append(ejs.rr('components/footer.ejs'))
